@@ -1,0 +1,11 @@
+#
+# robots.txt for BYZL
+#
+
+User-agent: *
+
+Disallow: /App/
+Disallow: /System/
+Disallow: /tpl/Admin/
+Disallow: /tpl/Mobile/
+Disallow: /Upload/

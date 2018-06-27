@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteCond %{http_host} ^wugongqi.cn [NC]
+
+RewriteRule ^(.*)$ http://www.wugongqi.cn/$1 [L,R=301]

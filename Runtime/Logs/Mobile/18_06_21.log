@@ -1,0 +1,81 @@
+[ 2018-06-21T08:56:59+08:00 ] 127.0.0.1 /Mobile/Index/result
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+
+[ 2018-06-21T08:57:06+08:00 ] 127.0.0.1 /Mobile/Index/result
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+
+[ 2018-06-21T08:57:09+08:00 ] 127.0.0.1 /Mobile/Index/result
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+
+[ 2018-06-21T08:57:31+08:00 ] 127.0.0.1 /Mobile/Index/result
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+
+[ 2018-06-21T08:57:36+08:00 ] 127.0.0.1 /Mobile/Index/result_share
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+
+[ 2018-06-21T10:37:14+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:37:38+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:37:38+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:37:38+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:38:03+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:38:04+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:38:17+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:38:17+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:39:09+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:39:09+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:39:10+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:39:10+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:39:10+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:39:10+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T10:39:52+08:00 ] 127.0.0.1 /Mobile/Index/subject
+ERR: syntax error, unexpected 'else' (T_ELSE), expecting end of file
+
+[ 2018-06-21T12:28:44+08:00 ] 127.0.0.1 /Mobile/Index/result
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `red_members` WHERE ( score> ) LIMIT 1  
+

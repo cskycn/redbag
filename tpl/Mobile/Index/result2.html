@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>容易保▪关爱日</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no">
+    <link href="/Public/css/media.base.css" rel="stylesheet" type="text/css">
+    <style>
+        html,body{background-color: #3FA2E5;}
+        .bimg100{background-size: 100% 100%;height: 100%;width: 100%;background-repeat: no-repeat;}
+        .rbg{/*background-image: url('/Public/images/m1-bg2.jpg');*/position: fixed;top:0;left:0;overflow: auto;}
+        .res-bg{width: 17.778rem;/*height: 21.111rem;*//*background-color: #fff;*/margin:0rem auto 0.685rem auto;border-radius: 0.625rem;}
+        /*.res-btn{width: 17.778rem;height: 2.259rem;line-height: 2.259rem;text-align:center;background-color: #ee6e00;border-radius: 0.185rem;margin: 1.556rem auto;color:#fff;font-family: MicrosoftYaHei;font-size: 0.889rem;}*/
+        /*.res-btn{margin: 0.741rem auto;color:#fff;text-align:center;font-size: 0.889rem;	width: 17.778rem;  height: 2.259rem;line-height: 2.259rem;  background-image: linear-gradient(180deg, #d4002c 0%, #ea0046 59%, #ff0060 100%), linear-gradient(#e1003c, #e1003c);background-blend-mode: normal,normal;border-radius: 0.185rem;}*/
+        .res-btn{margin: 0.72rem auto 1.147rem auto;	width: 15.093rem;height: 2.133rem;
+            background-image: url("/Public/images/share.png");background-repeat: no-repeat;background-size: 100% 100%;}
+        .res-qrcode{overflow: hidden;text-align: center;}
+        .res-qrcode img{width:6.4rem;height: 6.4rem;display: block;margin: 0.2rem auto 0 auto;}
+        .res-qrcode-title{width: 100%;text-align:center;font-size: 0.926rem;line-height: 1.333rem;color: #ff0069;}
+        .res-bg table{border:0.056rem solid #ff0069;margin:1.1rem auto auto auto;width: 16rem;border-collapse: collapse;}
+        .res-bg table tr{border: 0.056rem solid #ff0069;width: 16rem;margin: auto;height:1.1556rem;line-height: 1.1556rem;}
+        .res-bg table th, .res-bg table td{color: #888787;	font-size: 0.556rem;text-align: center;border: 0.056rem solid #ff0069;}
+        .res-bg table th{color:#ff0069;}
+        .res-bg .jfen{text-align: center;width:100%;font-size: 0.8rem;line-height: 1rem;margin-bottom: 0.2rem;}
+        .res-bg .remark{font-size: 0.556rem;padding-left: 1rem;margin-top: 0.5rem;}
+        .wxshare{background: rgba(000, 000, 000, 0.7);position: fixed;z-index: 11;top: 0;left: 0;width: 100%;height: 100%;display: none;}
+        .wxshare .zzz {position: absolute;right: 20px;top: 10px;}
+        .pm-header{height: 6.4rem;width: 16rem;margin: 1rem auto;}
+        .pm-header img{width: 100%;}
+        @media screen and (min-width: 375px) and (min-height: 750px) {
+            /*.res-bg{margin-top:13rem;}*/
+            /*.res-btn{margin: 1.741rem auto;}*/
+            .pm-header{margin: 3rem auto;}
+            .res-btn{margin: 1.741rem auto;}
+        }
+        .pred{background-image: url("/Public/images/red.png");background-size: 100% 100%;background-repeat: no-repeat;position: relative;    height: 5rem;
+            width: 100%;
+            text-align: center;
+            margin-top: 4rem;}
+        .pred img{height: 3.84rem;width: 3.84rem;border-radius: 50%;overflow: hidden;position: absolute;
+            top: -3.125rem;left:0;right:0;margin: auto;}
+        .pred span{position: absolute;
+            bottom: 2.4375rem;
+            display: block;
+            width: 100%;
+            text-align: center;
+            left: 0;
+            font-size: 1.067rem;
+            color: #fff;}
+        .pzt{	width: 18.293rem;height: 2.827rem;margin: -1.375rem auto 1.147rem auto;}
+        .pzt img{width: 18.267rem;height: 2.8rem;}
+        .rdesc{margin-top: 0.907rem;}
+        .rdesc p{
+            width: 100%;
+            text-align: center;
+            /*height: 2.853rem;*/
+            font-size: 0.75rem;
+            line-height: 1.053rem;
+            color: #ffffff;}
+    </style>
+</head>
+<body>
+<div class="bimg100 rbg">
+    <div class="pm-header">
+        <img src="/Public/images/zt3.png">
+    </div>
+    <div class="pred">
+        <img src="{$memberinfo['avatar_url']}">
+        <span>您当前已赢得{$memberinfo['score']}积分</span>
+    </div>
+    <div class="pzt">
+        <img src="/Public/images/zt4.png">
+    </div>
+    <div class="res-bg">
+        <div class="res-qrcode">
+            <img src="/Public/images/qrcode.jpg">
+        </div>
+        <div class="rdesc">
+            <p>关注“容易保”微信公众号，</p>
+            <p>查询排名并领取奖励</p>
+            <p> 活动时间：2018年3月16日-18日</p>
+        </div>
+    </div>
+    <div class="res-btn" onclick="doShare()"></div>
+    <div class="wxshare" onclick="closeShare()">
+        <div class="zzz"><img src="/Public/images/icon-wxshare.png" height="150"></div>
+    </div>
+</div>
+<script src="/Public/js/jquery-1.9.1.min.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript" src="https://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+<script type="text/javascript">
+    $youziku.load("*", "ab5a9cb589e84a8d8c9fc4d57cbd4f55", "YouYuan");
+    $youziku.draw();
+</script>
+<script>
+    var shttp_url='{$http_url}';
+    var shttp_img_url='{$http_img_url}';
+    var sremark='{$remark}';
+    var stitle = '{$title}';
+    var json_data = {$jsonData};
+//    console.log("aaa"+json_data.appId);
+    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {WeixinJSBridge.call('hideOptionMenu');});
+    $.getScript('https://res.wx.qq.com/open/js/jweixin-1.2.0.js',function(){
+        wx.config({
+            debug: false,
+            appId: json_data.appId, // 必填，公众号的唯一标识
+            timestamp: json_data.timestamp, // 必填，生成签名的时间戳
+            nonceStr: json_data.nonceStr, // 必填，生成签名的随机串
+            signature: json_data.signature,
+            jsApiList: [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'closeWindow',
+                'hideOptionMenu',
+                'showOptionMenu'
+            ]
+        });
+        wx.ready(function (res) {
+            wx.hideOptionMenu();
+        });
+        wx.error(function (res) {
+        });
+    });
+    function closeShare(){
+        $(".wxshare").hide();
+    }
+    function doShare(){
+        $(".wxshare").show();
+        wx.showOptionMenu();
+        /** 分享到朋友圈 */
+        wx.onMenuShareTimeline({
+            title: stitle,
+            link: shttp_url,
+            imgUrl: shttp_img_url,
+            success: function () {
+                closeShare();
+            },
+            cancel: function () {
+                closeShare();
+            }
+        });
+        /** 分享给朋友 */
+        wx.onMenuShareAppMessage({
+            title: stitle,
+            desc: sremark,
+            link: shttp_url,
+            imgUrl: shttp_img_url,
+            type: 'link',
+            dataUrl: '',
+            success: function () {
+                closeShare();
+            },
+            cancel: function () {
+                closeShare();
+            }
+        });
+    }
+</script>
+<script src="https://s19.cnzz.com/z_stat.php?id=1273138391&web_id=1273138391" language="JavaScript"></script>
+</body>
+</html>
